@@ -1,0 +1,42 @@
+.titulo{
+    background-color: burlywood;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+
+.banner{
+    height: 500px;
+
+
+    
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
+        ),
+        url("sofá.webp");
+background-image: url(BackGroundImoveis.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.produto{
+    padding: 30px;
+    background-color: burlywood ;
+}
+
+.preco{
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
+}
+
+body{
+    background-color: bisque;
+}
+
+.tudo{
+    background-color: burlywood;
+}
