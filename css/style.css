@@ -1,269 +1,280 @@
-/* // Configuration */
-@import "functions";
-@import "variables";
-@import "variables-dark";
-@import "maps";
-@import "mixins";
-@import "utilities";
+/* ==========================
+   CONFIGURAÇÕES GERAIS
+========================== */
 
-/* // Layout & components */
-@import "root";
-@import "reboot";
-@import "type";
-@import "images";
-@import "containers";
-@import "grid";
-@import "tables";
-@import "forms";
-@import "buttons";
-@import "transitions";
-@import "dropdown";
-@import "button-group";
-@import "nav";
-@import "navbar";
-@import "card";
-@import "accordion";
-@import "breadcrumb";
-@import "pagination";
-@import "badge";
-@import "alert";
-@import "progress";
-@import "list-group";
-@import "close";
-@import "toasts";
-@import "modal";
-@import "tooltip";
-@import "popover";
-@import "carousel";
-@import "spinners";
-@import "offcanvas";
-@import "placeholders";
-@import "helpers";
-@import "utilities/api";
-
-.catalogo{
-    font-family: 'Times New Roman', Times, serif;
-    font: bold; 
-    color: brown;
-   font-size: 2rem;
-   font-weight: bold;
-   text-align: center;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
+body{
+    background-color:bisque;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
+/* ==========================
+   NAVBAR
+========================== */
+
+.bg-cor{
+    background-color:burlywood;
+    padding:15px 0;
+}
+
+header{
+    text-align:center;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    background-image:url("img/BackGroundImoveis.png");
+    background-size:cover;
+    background-position:center;
+
+    padding:60px 0;
+
+}
+
+.conteudo-hero{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
 
 .one{
-    font-family: 'Times New Roman', Times, serif;
-    font: bold; 
-    color: brown;
-   font-size: 2rem;
-   font-weight: bold;
 
-}
-p {
-   font-size: 1.2rem;
-}
-
-
-.bg-cor {
-    background-color: burlywood;
-    padding: 15px 0;
-}
-
-body {
-    background-color: burlywood;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
-    text-align: center;
+    color:brown;
 
 }
 
-.card-img-top {
-    background-color:burlywood;
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
+.one h3{
+
+    font-size:55px;
+
+    font-family:"Times New Roman", serif;
+
+    font-weight:bold;
+
+}
+
+.one p{
+
+    font-size:28px;
+
+    margin-top:15px;
+
+    font-family:"Times New Roman", serif;
+
+}
+
+.catalogo{
+
+    margin-top:25px;
+
+    font-size:45px;
+
+    font-weight:bold;
+
+    color:brown;
+
+    font-family:"Times New Roman", serif;
+
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.card{
+
+    transition:0.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card-img-top{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
 }
 
 .card-body{
-    background-color: burlywood;
-    transform: translateY(-6px);
-    transition: 0.3s;
+
+    background-color:burlywood;
+
 }
 
 .card-body .btn{
-    transform: translateY(-6px);
-    transition: 0.3s;
-    margin-top:auto
-}
 
-/* .card {
-    height: 100%;
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column; */
-.hero {
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-image: url(/img/BackGroundImoveis.png);
-    background-size: cover;
-    background-position: center;
-
-
-    
-         
- 
-}
-
-
-
-.conteudo-hero{
-     max-width: 600rem;
-     flex: left;
+    margin-top:10px;
 
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+.preco{
+
+    font-size:32px;
+
+    color:green;
+
+    font-weight:bold;
+
 }
 
-.titulo{
-    background-color: burlywood;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-}
-
+/* ==========================
+   BANNERS
+========================== */
 
 .banner{
-    height: 500px;
 
+    height:500px;
 
-    
     background:
         linear-gradient(
-            rgba(0,0,0,0.3),
-            rgba(0,0,0,0.3)
+            rgba(0,0,0,.3),
+            rgba(0,0,0,.3)
         ),
-        url("/img/camaCasalBanner.jpg");
+        url("img/camaCasalBanner.jpg");
 
-    background-size: cover;
-    background-position: center;
-}
+    background-size:cover;
 
-.produto{
-    padding: 30px;
-    background-color: burlywood ;
-}
+    background-position:center;
 
-.preco{
-    font-size: 30px;
-    font-weight: bold;
-    color: green;
-}
-
-body{
-    background-color: bisque;
-}
-
-.tudo{
-    background-color: burlywood;
-}
-
-.titulo{
-    background-color: burlywood;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-}
-
-
-.bannerSofa{
-    height: 500px;
-
-
-    
-    background:
-        linear-gradient(
-            rgba(0,0,0,0.3),
-            rgba(0,0,0,0.3)
-        ),
-        url("/img/sofá.webp");
-background-image: url(/img/sofá.webp);
-    background-size: cover;
-    background-position: center;
-}
-
-.produto{
-    padding: 30px;
-    background-color: burlywood ;
-}
-
-.preco{
-    font-size: 30px;
-    font-weight: bold;
-    color: green;
-}
-
-body{
-    background-color: bisque;
-}
-
-.tudo{
-    background-color: burlywood;
 }
 
 .bannerCama{
-    height: 500px;
 
+    height:500px;
 
-    
     background:
         linear-gradient(
-            rgba(0,0,0,0.3),
-            rgba(0,0,0,0.3)
+            rgba(0,0,0,.3),
+            rgba(0,0,0,.3)
         ),
-        url("/img/camaCasalBanner.jpg");
-background-image: url(/img/camaCasalBanner.jpg);
-    background-size: cover;
-    background-position: center;
+        url("img/camaCasalBanner.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
 }
+
+.bannerSofa{
+
+    height:500px;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.3),
+            rgba(0,0,0,.3)
+        ),
+        url("img/sofa.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+/* ==========================
+   PRODUTO
+========================== */
 
 .produto{
-    padding: 30px;
-    background-color: burlywood ;
+
+    background-color:burlywood;
+
+    padding:30px;
+
 }
 
-.preco{
-    font-size: 30px;
-    font-weight: bold;
-    color: green;
-}
+.titulo{
 
-body{
-    background-color: bisque;
+    background-color:burlywood;
+
+    text-align:center;
+
+    padding:20px;
+
 }
 
 .tudo{
-    background-color: burlywood;
+
+    background-color:burlywood;
+
 }
 
 .comprar{
-    width: 10%;
-    height: 50px;
-    color: green;
+
+    width:180px;
+
+    height:50px;
+
 }
-.carta_customizada:hover {
-    transform: translateY(-6px);
-    transition: 0.3s;
+
+.carta_customizada{
+
+    transition:.3s;
+
+}
+
+.carta_customizada:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/* ==========================
+   RESPONSIVIDADE
+========================== */
+
+@media(max-width:768px){
+
+    .one h3{
+
+        font-size:40px;
+
+    }
+
+    .one p{
+
+        font-size:22px;
+
+    }
+
+    .catalogo{
+
+        font-size:35px;
+
+    }
+
 }
