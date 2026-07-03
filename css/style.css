@@ -28,17 +28,53 @@ header{
     text-align:center;
 }
 
-/* ==========================
-   HERO
-========================== */
-
 .hero{
 
-    background-image:url("img/BackGroundImoveis.png");
+    min-height:100vh;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.45),
+            rgba(0,0,0,.45)
+        ),
+        url("../img/BackGroundImoveis.png");
+
     background-size:cover;
+
     background-position:center;
 
+    background-repeat:no-repeat;
+
     padding:60px 0;
+
+}
+
+.heroMenu{
+
+    height:420px;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.35),
+            rgba(0,0,0,.35)
+        ),
+        url("../img/BackGroundImoveis.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    text-align:center;
 
 }
 
